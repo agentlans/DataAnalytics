@@ -1,6 +1,6 @@
 CFLAGS = -O2
-LDFLAGS = `pkg-config --libs eigen3` `pkg-config --libs gsl`
-INCLUDE = -Iinclude/ `pkg-config --cflags eigen3` `pkg-config --cflags gsl`
+LDFLAGS = `pkg-config --libs eigen3` `pkg-config --libs gsl` `pkg-config --libs nlopt`
+INCLUDE = -Iinclude/ `pkg-config --cflags eigen3` `pkg-config --cflags gsl` `pkg-config --cflags nlopt`
 
 SRCS = $(wildcard src/*.cpp) # source files
 OBJS = $(SRCS:.cpp=.o)
