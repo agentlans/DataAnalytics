@@ -1,10 +1,8 @@
 #ifndef _INTERPOLATION
 #define _INTERPOLATION
 
-#include <vector>
 #include <gsl/gsl_spline.h>
-
-typedef std::vector<double> Vec;
+#include "General.hpp"
 
 class Interpolation {
 public:
